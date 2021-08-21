@@ -1,0 +1,10 @@
+{
+    "name": "siesta-monorepo",
+    "private": true,
+    "description": "Monorepo for Siesta - stress-free JavaScript/TypeScript testing and benchmarking tool",
+    "type": "module",
+    "dependencies": {
+        "playwright": "^1.14.0",
+        "@web/dev-server": "^0.1.21"
+    }
+}
