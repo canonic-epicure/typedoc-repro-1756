@@ -10,10 +10,12 @@ const run = async () => {
     // await page.waitForLoadState('load');
     // await page.waitForFunction(() => document.readyState === 'complete')
 
-    console.log("FROM CLIENT: ", await page.evaluate(`window.CLIENT()`))
-
-    await page.close()
-    await browser.close()
+    try {
+        console.log("FROM CLIENT: ", await page.evaluate(`window.CLIENT()`))
+    } finally {
+        await page.close()
+        await browser.close()
+    }
 };
 
 run();
