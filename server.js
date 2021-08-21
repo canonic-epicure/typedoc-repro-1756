@@ -1,7 +1,7 @@
 import playwright from "playwright";
 
 const run = async () => {
-    const browser = await playwright.webkit.launch({ headless: false });
+    const browser = await playwright.webkit.launch({ headless: true });
 
     const page = await browser.newPage({ viewport: null });
 
