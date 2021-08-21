@@ -8,7 +8,7 @@ const run = async () => {
     await page.goto('http://localhost:8000/index.html');
 
     // await page.waitForLoadState('load');
-    // await page.waitForFunction(() => window.CLIENT)
+    await page.waitForFunction(() => document.readyState === 'complete')
 
     console.log("FROM CLIENT: ", await page.evaluate(`window.CLIENT()`))
 
