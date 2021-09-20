@@ -1,4 +1,4 @@
-// import { it } from 'https://cdn.jsdelivr.net/npm/@bryntum/siesta@latest/index.js'
+import { it } from 'https://cdn.jsdelivr.net/npm/@bryntum/siesta@latest/index.js'
 
 if (document.readyState === 'complete' || document.readyState === 'interactive') {
     document.body.innerHTML = '<iframe></iframe>';
