@@ -1,8 +1,13 @@
-import { SOME } from "./another.js"
+// import { it } from 'https://cdn.jsdelivr.net/npm/@bryntum/siesta@latest/index.js'
 
-window.CLIENT = () => SOME
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    document.body.innerHTML = '<iframe></iframe>';
 
-import { it } from 'https://cdn.jsdelivr.net/npm/@bryntum/siesta@latest/index.js'
-it('', () => {})
+    const frame = document.querySelector('iframe')
 
+    frame.addEventListener('load', () => console.log("FRAME LOADED"))
 
+    frame.src = "https://www.theworldsworstwebsiteever.com/"
+} else {
+    console.log("NOT LOADED")
+}
