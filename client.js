@@ -1,13 +1,18 @@
 import { it } from 'https://cdn.jsdelivr.net/npm/@bryntum/siesta@latest/index.js'
 
 if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    document.body.innerHTML = '<iframe></iframe>';
+    // setTimeout(() => {
 
-    const frame = document.querySelector('iframe')
+        document.body.innerHTML = '<iframe></iframe>';
 
-    frame.addEventListener('load', () => console.log("FRAME LOADED"))
+        const frame = document.querySelector('iframe')
 
-    frame.src = "https://www.theworldsworstwebsiteever.com/"
+        frame.addEventListener('load', () => console.log("FRAME LOADED"))
+
+        frame.src = "https://www.theworldsworstwebsiteever.com/"
+
+    // }, 3000)
+
 } else {
     console.log("NOT LOADED")
 }
