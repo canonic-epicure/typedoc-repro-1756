@@ -28,6 +28,8 @@
 
     "include" : [
         "index.ts",
+        "index2.ts",
+        "src/**/*.ts"
     ],
 
     "exclude" : [
